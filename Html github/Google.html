@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+		* 
+		{
+		  box-sizing: border-box;
+		}
+
+		body 
+		{
+		  margin: 0;
+		  font-family: Arial;
+		  font-size: 17px;
+		}
+
+		#myVideo 
+		{
+		  position: fixed;
+		  right: 0;
+		  bottom: 0;
+		  min-width: 100%; 
+		  min-height: 100%;
+		}
+		.img-div
+		{
+			position: absolute;
+			top: 25%;
+			left: 52%;
+			width:32%;
+			transform: translate(-50%, -50%);
+			color:#ff9e0e;;
+			
+			margin:0px;
+		}
+		.txt-control
+		{
+			position: absolute;
+			color: white;
+			top: 38%;
+			left: 31%;
+			width:40%;
+			height: 5%;
+			border-radius: 17px;
+			border: none;
+			margn: none;
+			outline-color: transparent;
+		}
+		input::placeholder
+		{
+			color:grey;
+			font-family: calibri;
+			font-size:18px;
+			padding-left:12px;
+		}
+		.href-1
+		{
+			color: white;
+			background-color: transparent;
+			position: absolute;
+			top: 3%;
+			left: 85%;
+			margin: 0px;
+			font-size: 20px;
+			border-color: transparent;
+		}
+		.href-2
+		{
+			color: white;
+			background-color: transparent;
+			position: absolute;
+			top: 3%;
+			left: 90%;
+			margin:0px;
+			font-size: 20px;
+			border-color: transparent;
+		}
+		.btn1
+		{
+			position: absolute;
+			top: 48%;
+			left: 35%;
+			height: 5%;
+			margin: 0px;
+			font-size: 20px;
+			background-color: rgb(34, 37, 39);
+			border-top-color: rgb(57, 62, 64);
+			border-right-color: rgb(57, 62, 64);
+			border-bottom-color: rgb(57, 62, 64);
+			border-left-color: rgb(57, 62, 64);
+			color: rgb(186, 178, 166);
+		}
+		.btn2
+		{
+			position: absolute;
+			top: 48%;
+			left: 50%;
+			height: 5%;
+			margin: 0px;
+			font-size: 20px;
+			background-image: -webkit-linear-gradient(top, rgb(33, 35, 36), rgb(35, 39, 40));
+			background-color: rgb(34, 37, 39);
+			border-top-color: rgb(57, 62, 64);
+			border-right-color: rgb(57, 62, 64);
+			border-bottom-color: rgb(57, 62, 64);
+			border-left-color: rgb(57, 62, 64);
+			color: rgb(186, 178, 166);
+		}
+
+</style>
+</head>
+<body>
+<form action="https://www.google.co.in/" >
+
+<video autoplay muted loop id="myVideo">
+  <source src="Mountains.mp4" type="video/mp4">
+</video>
+
+<div>
+  <img src="google.png" class="img-div">
+  <input type="text" placeholder="Search Google or Type URL" class="txt-control">
+  <input type="submit" class="btn1" value="Google Search">
+  <input type="button" class="btn2" value="I'm Feeling Lucky">
+  <a href="https://www.google.com/gmail/" target="_blank" class="href-1"><u>Gmail</a></u>
+  <a href="https://www.google.co.in/imghp?hl=en&tab=ri&ogbl" target="_blank" class="href-2">Images</a>
+</div>
+</form>
+</body>
+</html>
