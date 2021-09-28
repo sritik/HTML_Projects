@@ -1,0 +1,113 @@
+body{
+	margin:0;
+	padding:0;
+	font-family:'lato',sans-serif;
+	background-image:url("../images/login_bg.jpg");
+	background-size:cover;
+	width:100vh;
+}
+.login_conatiner{
+	position:relative;
+	height:100vh;
+}
+.avatar{
+	width:100px;
+	height:100px;
+	position:absolute;	
+	top: -9%;
+    left: 40%;
+
+}
+
+.login_box{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:400px;
+	height:500px;
+	background-color:#111;
+	background-size:cover;
+	padding: 50px;
+	border-radius:0;
+	box-shadow:0 55px 85px ;
+}
+
+
+.login_box h2{
+	margin:0 0 30px;
+	letter-spacing:10px;
+	text-transform: uppercase;
+	padding:0;
+	font-size:40px;
+	color:#84c8d7;
+	text-align: left;
+}
+
+.login_box .user_box{
+	position: relative;
+}
+
+.login_box .user_box input{
+	width:100%;
+	padding:10px 0;
+	font-size: 16px;
+	color:#fff;
+	margin-bottom: 30px;
+	border:none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background-color: transparent;
+	
+}
+
+.login_box .user_box label{
+	position:absolute;
+	top:0;
+	left:0;
+	padding:10px 0;
+	font-size:16px;
+	color:#fff;
+	pointer-events:none;
+	transition: 0.5s;
+
+}
+
+.login_box .user_box  input:focus ~ label,
+.login_box .user_box  input:valid ~ label{
+	top:-20px;
+	color: #03e9f;
+	font-size:12px;
+}
+
+.login_box input[type="submit"]{
+	display:inline-block;
+	padding:10px 20px;
+	color:#fff;
+	font-size:20px;
+	text-decoration:none;
+	text-transform:uppercase;
+	transition: 0.5s;
+	margin-top:20px;
+	letter-spacing:4px;
+	background-color: #44d2c2;
+	border:1px solid ;
+	border-color:#44d2c2;
+}
+.login_box input[type="submit"]:hover{
+	background-color: #03e9f4;
+	color:#fff;
+	box-shadow: 0 0 5px #03e9f4,
+				0 0 25px #03e9f4,
+				0 0 50px #03e9f4,
+				0 0 100px #03e9f4;
+}
+.login_box form a{
+	text-decoration:none;
+	font-size:15px;
+	line-height:20px;
+	color:darkgrey;
+}
+.login_box form a:hover{
+	color:#ffc107;
+}
